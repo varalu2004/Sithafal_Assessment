@@ -47,5 +47,5 @@ This project is a PDF scraping application built with Streamlit that extracts te
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
-   cd <repository_folder>
+   git clone <[repository_url](https://github.com/varalu2004/Sithafal_Assessment)>
+
