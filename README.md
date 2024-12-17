@@ -35,6 +35,32 @@ This project is a PDF scraping application built with Streamlit that extracts te
 ### Task1 Output
 ![Task1 Output](https://i.postimg.cc/QMKw7ZPH/Screenshot-262.png)
 ---
+# Chat with Websites using RAG Pipeline
+
+This project leverages web scraping, sentence embedding, and a language model to provide concise answers to user queries about websites.
+
+## Features
+- **Web Crawling and Scraping**: Extracts content from university websites.
+- **Sentence Embedding**: Processes and stores content embeddings using `SentenceTransformer`.
+- **Efficient Search**: Implements FAISS for fast and accurate similarity searches.
+- **Query Handling**: Matches user queries with the most relevant content.
+- **Response Generation**: Uses GPT-2 to generate answers in a human-readable format.
+
+## Project Structure
+1. **DataIngestion**:
+   - Crawls and scrapes web pages.
+   - Segments content and generates embeddings.
+   - Stores embeddings using FAISS for efficient similarity search.
+
+2. **QueryHandler**:
+   - Handles user queries.
+   - Searches for relevant content chunks using FAISS.
+
+3. **ResponseGenerator**:
+   - Generates context-based answers using GPT-2.
+
+### Task2 Output
+![Task2 Output](https://i.postimg.cc/Kj1MGQ4S/output2.jpg)
 
 ## Setup Instructions
 
