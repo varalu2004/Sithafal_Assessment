@@ -74,5 +74,5 @@ This project leverages web scraping, sentence embedding, and a language model to
 
 1. Clone the repository:
    ```bash
-   git clone <(https://github.com/varalu2004/Sithafal_Assessment)>
+   git clone (https://github.com/varalu2004/Sithafal_Assessment)
 
