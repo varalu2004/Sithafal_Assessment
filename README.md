@@ -32,7 +32,7 @@ This project is a PDF scraping application built with Streamlit that extracts te
 ### LLM and Models
 - **Groq LLM**: `llama-3.1-70b-versatile` model for answering questions.
 - **HuggingFace Transformers**: For text embedding using `sentence-transformers/all-MiniLM-L6-v2`.
-![Output](C:\Users\VARA\Pictures\Screenshots)
+![Task1 Output](https://i.postimg.cc/QMKw7ZPH/Screenshot-262.png))
 ---
 
 ## Setup Instructions
