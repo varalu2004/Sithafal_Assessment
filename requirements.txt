@@ -1,0 +1,12 @@
+pdfplumber
+PyMuPDF
+pdfminer.six
+streamlit
+pickle-mixin
+langchain
+langchain-groq
+sentence-transformers
+faiss-cpu
+Pillow
+pytesseract
+
