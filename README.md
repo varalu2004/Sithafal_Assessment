@@ -94,6 +94,20 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline that ena
 - Stanford University
 
 - University of North Dakota
+### Libraries Used
+Dependencies include:
+
+- requests
+
+- beautifulsoup4
+
+- sentence-transformers
+
+- numpy
+
+- faiss-cpu
+
+- transformers
 ### Task2 Output
 ![Task2 Output](https://i.postimg.cc/Kj1MGQ4S/output2.jpg)
 
