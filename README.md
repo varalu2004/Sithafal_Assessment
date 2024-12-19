@@ -2,10 +2,6 @@
 # Chat with PDF Using RAG Pipeline
 ## Overview
 This project implements a **Retrieval-Augmented Generation (RAG)** pipeline to process, analyze, and interact with semi-structured data from multiple PDF files. The system extracts text, images, and tables, embeds the data into a vector database, and enables accurate retrieval and response generation using a selected LLM.
-
-## Features
-
-- *
 ## Features
 1. **Data Ingestion**  
    - Extract text and structured data from uploaded PDF files.  
