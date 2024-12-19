@@ -47,11 +47,11 @@ streamlit run Task1.py
 ![Task1 Output](https://i.postimg.cc/QMKw7ZPH/Screenshot-262.png)
 ---
 # Chat with Websites using RAG Pipeline
-
-This project leverages web scraping, sentence embedding, and a language model to provide concise answers to user queries about websites.
+## Overview 
+This project implements a Retrieval-Augmented Generation (RAG) pipeline that enables users to interact with structured and unstructured data extracted from websites. The pipeline includes crawling, scraping, embedding generation, and natural language query handling to generate accurate, context-rich responses.
 
 ## Features
-- **Web Crawling and Scraping**: Extracts content from university websites.
+- **Web Crawling and Scraping**: Extracts content from u websites.
 - **Sentence Embedding**: Processes and stores content embeddings using `SentenceTransformer`.
 - **Efficient Search**: Implements FAISS for fast and accurate similarity searches.
 - **Query Handling**: Matches user queries with the most relevant content.
@@ -69,7 +69,31 @@ This project leverages web scraping, sentence embedding, and a language model to
 
 3. **ResponseGenerator**:
    - Generates context-based answers using GPT-2.
+### Usage 
+**Step 1: Run the Pipeline**
 
+- Update the list of website URLs in the urls variable within the script.
+
+- Execute the script:
+
+   python main.py
+
+- Enter your queries when prompted. Type exit to quit the program.
+
+**Step 2: Query the System**
+
+- After initializing the pipeline, users can input natural language questions.
+
+- The system will retrieve relevant information and generate responses using the LLM.
+#### Examples Websites
+
+- University of Chicago
+
+- University of Washington
+
+- Stanford University
+
+- University of North Dakota
 ### Task2 Output
 ![Task2 Output](https://i.postimg.cc/Kj1MGQ4S/output2.jpg)
 
@@ -77,9 +101,7 @@ This project leverages web scraping, sentence embedding, and a language model to
 
 ### Prerequisites
 - Python 3.9 or later.
-- Tesseract OCR installed:
-  - On **Linux**: `sudo apt install tesseract-ocr`
-  - On **Windows**: [Download and install Tesseract](https://github.com/tesseract-ocr/tesseract)
+
 
 ### Installation Steps
 
