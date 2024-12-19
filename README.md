@@ -1,9 +1,7 @@
 
 # Chat with PDF Using RAG Pipeline
-
-This project is a PDF scraping application built with Streamlit that extracts text, table data, and images (using OCR) from uploaded PDF files. It utilizes **Large Language Models (LLMs)** for answering user queries based on the extracted content, powered by vector embeddings.
-
----
+## Overview
+This project implements a **Retrieval-Augmented Generation (RAG)** pipeline to process, analyze, and interact with semi-structured data from multiple PDF files. The system extracts text, images, and tables, embeds the data into a vector database, and enables accurate retrieval and response generation using a selected LLM.
 
 ## Features
 
@@ -13,8 +11,6 @@ This project is a PDF scraping application built with Streamlit that extracts te
 - **LLM Integration**: Uses the Groq-based LLM (`llama-3.1-70b-versatile`) to answer user questions about the processed data.
 - **Vector Storage**: Embeds the extracted text into vector format using `HuggingFaceEmbeddings` and stores it in a FAISS index.
 - **Query Processing**: Retrieve and display answers to user queries with a retrieval-augmented generation (RAG) approach.
-
----
 
 ## Technologies Used
 
@@ -32,6 +28,9 @@ This project is a PDF scraping application built with Streamlit that extracts te
 ### LLM and Models
 - **Groq LLM**: `llama-3.1-70b-versatile` model for answering questions.
 - **HuggingFace Transformers**: For text embedding using `sentence-transformers/all-MiniLM-L6-v2`.
+  ### Install dependencies:
+  pip install -r requirements.txt
+
 ### Task1 Output
 ![Task1 Output](https://i.postimg.cc/QMKw7ZPH/Screenshot-262.png)
 ---
