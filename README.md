@@ -42,9 +42,9 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline to p
 ### LLM and Models
 - **Groq LLM**: `llama-3.1-70b-versatile` model for answering questions.
 - **HuggingFace Transformers**: For text embedding using `sentence-transformers/all-MiniLM-L6-v2`.
-### Install dependencies:
+### Install dependencies
   pip install -r requirements.txt
-### Run the Application:
+### Run the Application
 streamlit run Task1.py
 
 ### Task1 Output
