@@ -5,12 +5,26 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline to p
 
 ## Features
 
-- **PDF Upload**: Upload one or more PDF files through the Streamlit sidebar.
-- **Text Extraction**: Extracts plain text, table data, and image text using OCR.
-- **Image OCR**: Processes images like graphs or pie charts inside PDFs and extracts textual content using `pytesseract`.
-- **LLM Integration**: Uses the Groq-based LLM (`llama-3.1-70b-versatile`) to answer user questions about the processed data.
-- **Vector Storage**: Embeds the extracted text into vector format using `HuggingFaceEmbeddings` and stores it in a FAISS index.
-- **Query Processing**: Retrieve and display answers to user queries with a retrieval-augmented generation (RAG) approach.
+- *
+## Features
+1. **Data Ingestion**  
+   - Extract text and structured data from uploaded PDF files.  
+   - Segment data into logical chunks for granular embedding.  
+   - Convert chunks into vector embeddings using a pre-trained model.  
+   - Store embeddings in a FAISS vector database for efficient retrieval.  
+
+2. **Query Handling**  
+   - Accept user queries in natural language.  
+   - Perform similarity searches in the vector database to find relevant chunks.  
+   - Use an LLM to generate responses based on retrieved chunks.  
+
+3. **Comparison Queries**  
+   - Handle user queries requiring comparisons across PDFs.  
+   - Retrieve and aggregate relevant data for comparison.  
+   - Provide structured responses (e.g., tables, bullet points).  
+
+4. **Response Generation**  
+   - Leverage retrieval-augmented prompts to ensure context-rich, factual responses
 
 ## Technologies Used
 
@@ -28,8 +42,10 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline to p
 ### LLM and Models
 - **Groq LLM**: `llama-3.1-70b-versatile` model for answering questions.
 - **HuggingFace Transformers**: For text embedding using `sentence-transformers/all-MiniLM-L6-v2`.
-  ### Install dependencies:
+### Install dependencies:
   pip install -r requirements.txt
+### Run the Application:
+streamlit run Task1.py
 
 ### Task1 Output
 ![Task1 Output](https://i.postimg.cc/QMKw7ZPH/Screenshot-262.png)
